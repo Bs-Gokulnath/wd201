@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+</head>
+<body>
+<div class="container">
+<form id="form">
+    <div>
+        <div class="title">
+            <h2 >Registration Form</h2>
+        </div>
+        <div>
+            <label for="username">User Name: </label>
+            <input required type="text" name="username" id="name" placeholder="Name">
+        </div>
+    </div>
+    <div>
+        <div>
+            <label for="email">Email: </label>
+            <input  required type="email" name="email" id="email" placeholder="abc@gmail.com">
+        </div>
+    </div>
+    <div>
+        <div>
+            <label for="dob">Date of Birth: </label>
+            <input type="date" required name="dob" id="dob" >
+        </div>
+    </div>
+    <div>
+        <div>
+            <label for="password">Password: </label>
+            <input required type="password" name="password" id="password" placeholder="Password here">
+    </div>
+    <div>
+         <div class="checkbox-container">
+              <input type="checkbox" id="agree" class="checkbox">
+              <label for="agree">I agree to the terms and conditions</label>
+        </div>  
+    </div>
+    <button id="btn" type="submit">Submit</button>
+</form>
+
+</div>
+<hr>    
+<div class="entries-section">
+    <div class="mx-auto">
+        <h2 class="text-3xl text-center font-bold">Entries</h2>    
+        <div class="divide-y divide-gray-300/50" id="userEntries"></div>
+    </div>
+</div>
+<script src="registration.js"></script>
+</body>
+</html>
